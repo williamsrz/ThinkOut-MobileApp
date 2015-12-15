@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<style name="ThinkOut" parent="ThinkOut.Base">
+		<item name="actionBarStyle">@style/ThinkOut.CustomActionBar</item> 
+		<item name="colorPrimaryDark">@color/transparent</item>
+	</style>
+
+	<style name="ThinkOut.Base" parent="Theme.AppCompat.Light.NoActionBar">   
+	</style>
+
+	<style name="ThinkOut.CustomActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+	   	<item name="titleTextStyle">@style/ThinkOut.CustomTitleTextStyle</item>    
+	</style>
+
+	<style name="ThinkOut.CustomTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+		<item name="android:textColor">@color/black</item>   
+	</style>
+</resources>

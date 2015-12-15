@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{ABB2ACBA-5012-427E-95C7-64DF13E6C8DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkOut.Models", "ThinkOut.Models\ThinkOut.Models.csproj", "{22CD8792-9727-490A-904E-29459B39E04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkOut.Services", "ThinkOut.Services\ThinkOut.Services.csproj", "{5DC03AE8-912A-4686-8EBD-50232BDDD4F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkOut.ViewModels", "ThinkOut.ViewModels\ThinkOut.ViewModels.csproj", "{14838C34-CD2C-48FE-AFFB-1EA612484EA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{FE6339C0-8128-40AE-B8F2-D0CE292CA098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkOut.Droid", "ThinkOut.Droid\ThinkOut.Droid.csproj", "{21D1C80D-A57F-42C5-BDF7-8DBF391B866C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkOut.Droid.UITests", "ThinkOut.Droid.UITests\ThinkOut.Droid.UITests.csproj", "{ABB5D579-15A9-4428-B420-CE53B84A85DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14838C34-CD2C-48FE-AFFB-1EA612484EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14838C34-CD2C-48FE-AFFB-1EA612484EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14838C34-CD2C-48FE-AFFB-1EA612484EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14838C34-CD2C-48FE-AFFB-1EA612484EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21D1C80D-A57F-42C5-BDF7-8DBF391B866C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D1C80D-A57F-42C5-BDF7-8DBF391B866C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D1C80D-A57F-42C5-BDF7-8DBF391B866C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D1C80D-A57F-42C5-BDF7-8DBF391B866C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22CD8792-9727-490A-904E-29459B39E04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22CD8792-9727-490A-904E-29459B39E04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22CD8792-9727-490A-904E-29459B39E04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22CD8792-9727-490A-904E-29459B39E04C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC03AE8-912A-4686-8EBD-50232BDDD4F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC03AE8-912A-4686-8EBD-50232BDDD4F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC03AE8-912A-4686-8EBD-50232BDDD4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC03AE8-912A-4686-8EBD-50232BDDD4F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB5D579-15A9-4428-B420-CE53B84A85DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB5D579-15A9-4428-B420-CE53B84A85DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB5D579-15A9-4428-B420-CE53B84A85DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB5D579-15A9-4428-B420-CE53B84A85DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22CD8792-9727-490A-904E-29459B39E04C} = {ABB2ACBA-5012-427E-95C7-64DF13E6C8DF}
+		{5DC03AE8-912A-4686-8EBD-50232BDDD4F9} = {ABB2ACBA-5012-427E-95C7-64DF13E6C8DF}
+		{14838C34-CD2C-48FE-AFFB-1EA612484EA4} = {ABB2ACBA-5012-427E-95C7-64DF13E6C8DF}
+		{21D1C80D-A57F-42C5-BDF7-8DBF391B866C} = {FE6339C0-8128-40AE-B8F2-D0CE292CA098}
+		{ABB5D579-15A9-4428-B420-CE53B84A85DA} = {FE6339C0-8128-40AE-B8F2-D0CE292CA098}
+	EndGlobalSection
+EndGlobal
