@@ -1,18 +1,16 @@
-using Android.Content;
 using Cirrious.CrossCore.Platform;
-using Cirrious.MvvmCross.Droid.Platform;
 using Cirrious.MvvmCross.ViewModels;
+using Cirrious.MvvmCross.Touch.Platform;
+using UIKit;
 using ThinkOut.ViewModels;
-using Microsoft.WindowsAzure.MobileServices;
 
-namespace ThinkOut.Droid
+namespace ThinkOut.iPhone
 {
-	public class Setup : MvxAndroidSetup
+	public class Setup : MvxTouchSetup
 	{
-		public Setup(Context applicationContext)
-			: base(applicationContext)
+		public Setup(MvxApplicationDelegate applicationDelegate, UIWindow window)
+			: base(applicationDelegate, window)
 		{
-			CurrentPlatform.Init();
 		}
 
 		protected override IMvxApplication CreateApp()

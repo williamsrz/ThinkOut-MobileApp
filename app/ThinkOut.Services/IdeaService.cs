@@ -3,83 +3,72 @@ using System.Linq;
 using System.Threading.Tasks;
 using ThinkOut.Models;
 using System.Collections.Generic;
+using Microsoft.WindowsAzure.MobileServices;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 namespace ThinkOut.Services
 {
-    public class IdeaService : IIdeaService
-    {
-        private List<Idea> _ideas;
+	public class IdeaService : IIdeaService
+	{
+		public IdeaService()
+		{
+		}
 
-        public IdeaService()
-        {
-            _ideas = new List<Idea>
-            {
-                new Idea
-                { 
-                    Id = "1",
-                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mi massa, semper vitae accumsan at, sagittis id diam. Morbi non.",
-                    CreatedAt = DateTime.Now,    
-                },
-                new Idea
-                { 
-                    Id = "2",
-                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mi massa, semper vitae accumsan at, sagittis id diam. Morbi non.",
-                    CreatedAt = DateTime.Now,    
-                },
-                new Idea
-                { 
-                    Id = "3",
-                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mi massa, semper vitae accumsan at, sagittis id diam. Morbi non.",
-                    CreatedAt = DateTime.Now,    
-                },
-                new Idea
-                { 
-                    Id = "4",
-                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mi massa, semper vitae accumsan at, sagittis id diam. Morbi non.",
-                    CreatedAt = DateTime.Now,    
-                },
-                new Idea
-                { 
-                    Id = "5",
-                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mi massa, semper vitae accumsan at, sagittis id diam. Morbi non.",
-                    CreatedAt = DateTime.Now,    
-                },
-                new Idea
-                { 
-                    Id = "6",
-                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mi massa, semper vitae accumsan at, sagittis id diam. Morbi non.",
-                    CreatedAt = DateTime.Now,    
-                }
+		public async Task<Idea> GetIdea(string id)
+		{
+			var idea = new Idea();
 
-            };
-        }
+			try {
 
-        public async Task<Idea> GetIdea(string id)
-        {
-            return await Task.Factory.StartNew(() =>
-                _ideas
-                .FirstOrDefault(i => i.Id == id)
-            );
-        }
+				using (var client = new MobileServiceClient(Keys.ApplicationURL)) {
+					var table = client.GetTable<Idea>();
+					idea = await table.LookupAsync(id);
+				}
 
-        public async Task<List<Idea>> GetIdeasAsync()
-        {
-            return await Task.Factory.StartNew(() =>
-                _ideas
-                .OrderByDescending(i => i.CreatedAt)
-                .ToList()
-            );
-        }
+			} catch (Exception ex) {
+				Debug.WriteLine(ex);
+			}
 
-        public async Task AddIdea(Idea idea)
-        {
-            idea.CreatedAt = DateTime.Now;
+			return idea;
+		}
 
-            await Task.Factory.StartNew(() =>
-                _ideas.Add(idea)
-            );
-        }
-          
-    }
+		public async Task<ObservableCollection<Idea>> GetIdeasAsync()
+		{
+			var ideas = new ObservableCollection<Idea>();
+
+			try {
+				
+				using (var client = new MobileServiceClient(Keys.ApplicationURL)) {
+					var table = client.GetTable<Idea>();
+					ideas = await table.ToCollectionAsync();	
+				}
+		
+			} catch (Exception ex) {
+				Debug.WriteLine(ex);
+			}
+
+			return ideas;
+		}
+
+		public async Task AddIdeaAsync(Idea idea)
+		{
+			try {
+			
+				using (var client = new MobileServiceClient(Keys.ApplicationURL)) {
+					var table = client.GetTable<Idea>();
+					await table.InsertAsync(idea);
+				}
+
+			} catch (Exception ex) {
+				HandleError(ex);
+			}
+		}
+
+		private void HandleError(Exception ex)
+		{
+			//TODO: handle error more efficiently
+			Debug.WriteLine(ex);
+		}
+	}
 }
-

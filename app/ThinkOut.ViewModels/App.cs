@@ -5,18 +5,18 @@ using ThinkOut.Services;
 
 namespace ThinkOut.ViewModels
 {
-    public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
-    {
-        public override void Initialize()
-        {
-            CreatableTypes()
+	public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
+	{
+		public override void Initialize()
+		{
+			CreatableTypes()
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            Mvx.LazyConstructAndRegisterSingleton<IIdeaService, IdeaService>(); 
+			Mvx.LazyConstructAndRegisterSingleton<IIdeaService, IdeaService>(); 
 				
-            RegisterAppStart<HomeViewModel>();
-        }
-    }
+			RegisterAppStart<HomeViewModel>();
+		}
+	}
 }
