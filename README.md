@@ -33,5 +33,7 @@ v.3
 ### How to use / Como utilizar
 
 For now just clone, build and run!
+
 ---
+
 Por enquanto, clone o repositório compile e execute!
