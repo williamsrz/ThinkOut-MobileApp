@@ -8,7 +8,7 @@
 
 **ThinkOut** é uma app demo, para que você compartilhe ideias com outras pessoas, é construindo utilizando **Azure Mobile Apps** e **MvvmCross** e pode ser útil como ponto de partida para que você comece a construir aplicativos incríveis com **Xamain** e **Azure** 
 
-## Roadmap
+### Roadmap
 
 v.0
 - Create Unit Tests;
@@ -30,7 +30,7 @@ v.3
 - Setup push notification;
 
 
-## How to use / Como utilizar
+### How to use / Como utilizar
 
 For now just clone, build and run!
 ---
