@@ -97,9 +97,9 @@
     <Compile Include="Views\BaseView.cs" />
     <Compile Include="Helpers\MvvmCross\MvxActionBarActivity.cs" />
     <Compile Include="Helpers\MvvmCross\MvxActionBarEventSourceActivity.cs" />
-    <Compile Include="CustomPresenter.cs" />
     <Compile Include="Views\IdeasView.cs" />
     <Compile Include="Adapters\IdeaViewAdapter.cs" />
+    <Compile Include="Helpers\MvvmCross\CustomPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

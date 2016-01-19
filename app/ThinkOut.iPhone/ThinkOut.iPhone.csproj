@@ -149,7 +149,9 @@
     <Compile Include="Setup.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
-    <Compile Include="Views\HomeView.cs" />
+    <Compile Include="Helpers\UINavigationControllerExtensions.cs" />
+    <Compile Include="Helpers\MvvmCross\CustomPresenter.cs" />
+    <Compile Include="Helpers\UIColorExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
@@ -159,5 +161,10 @@
       <Project>{14838C34-CD2C-48FE-AFFB-1EA612484EA4}</Project>
       <Name>ThinkOut.ViewModels</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Helpers\MvvmCross\" />
+    <Folder Include="Views\" />
   </ItemGroup>
 </Project>

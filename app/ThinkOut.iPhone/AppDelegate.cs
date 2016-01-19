@@ -28,7 +28,18 @@ namespace ThinkOut.iPhone
 
 			_window.MakeKeyAndVisible();
 
+			SetupUiStyles();
+
 			return true;
+		}
+
+		private void SetupUiStyles()
+		{
+			UINavigationBar.Appearance.TintColor = UIColor.White;
+			UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.LightContent;
+
+			// Disable check for delegate in event registration: https://forums.xamarin.com/discussion/39470/installed-5-9-build-431-event-registration-is-overwriting-existing-delegate-error
+			UIApplication.CheckForEventAndDelegateMismatches = false;
 		}
 	}
 }
