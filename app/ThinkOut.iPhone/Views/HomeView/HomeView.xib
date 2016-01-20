@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView">
+            <connections>
+                <outlet property="ideaLabel" destination="0wX-cj-dQT" id="WYC-Bp-63A"/>
+                <outlet property="ideaTextField" destination="Uzc-Ho-VPy" id="KWV-sD-nog"/>
+                <outlet property="sendButton" destination="2Ep-FE-TeS" id="X3L-ks-24h"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual é a sua ideia?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wX-cj-dQT" userLabel="ideaLabel">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uzc-Ho-VPy" userLabel="ideaText">
+                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" adjustable="YES"/>
+                    </accessibility>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ep-FE-TeS" userLabel="sendButton">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="Enviar"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0wX-cj-dQT" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="0wk-A6-bI1"/>
+                <constraint firstItem="2Ep-FE-TeS" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="3y9-2s-o3Z"/>
+                <constraint firstItem="0wX-cj-dQT" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="6Ja-gZ-upP"/>
+                <constraint firstItem="Uzc-Ho-VPy" firstAttribute="top" secondItem="0wX-cj-dQT" secondAttribute="bottom" constant="10" id="7M7-3G-A59"/>
+                <constraint firstItem="Uzc-Ho-VPy" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" id="9nw-Ef-9Cv"/>
+                <constraint firstAttribute="trailing" secondItem="2Ep-FE-TeS" secondAttribute="trailing" constant="20" id="EJS-j2-Fd6"/>
+                <constraint firstAttribute="trailing" secondItem="0wX-cj-dQT" secondAttribute="trailing" constant="20" id="ZE0-iQ-24d"/>
+                <constraint firstItem="Uzc-Ho-VPy" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="bCN-Zj-7sj"/>
+                <constraint firstItem="2Ep-FE-TeS" firstAttribute="top" secondItem="Uzc-Ho-VPy" secondAttribute="bottom" constant="10" id="eYJ-4p-rxf"/>
+                <constraint firstAttribute="trailing" secondItem="Uzc-Ho-VPy" secondAttribute="trailing" constant="20" id="gXK-xw-zco"/>
+                <constraint firstItem="0wX-cj-dQT" firstAttribute="top" secondItem="2" secondAttribute="top" constant="220" id="uCC-Ov-XgO"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="0wX-cj-dQT"/>
+                    <exclude reference="Uzc-Ho-VPy"/>
+                    <exclude reference="2Ep-FE-TeS"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="7M7-3G-A59"/>
+                    <exclude reference="9nw-Ef-9Cv"/>
+                    <exclude reference="bCN-Zj-7sj"/>
+                    <exclude reference="gXK-xw-zco"/>
+                    <exclude reference="3y9-2s-o3Z"/>
+                    <exclude reference="EJS-j2-Fd6"/>
+                    <exclude reference="eYJ-4p-rxf"/>
+                    <exclude reference="0wk-A6-bI1"/>
+                    <exclude reference="6Ja-gZ-upP"/>
+                    <exclude reference="ZE0-iQ-24d"/>
+                    <exclude reference="uCC-Ov-XgO"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="0wX-cj-dQT"/>
+                    <include reference="Uzc-Ho-VPy"/>
+                    <include reference="2Ep-FE-TeS"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="7M7-3G-A59"/>
+                    <include reference="9nw-Ef-9Cv"/>
+                    <include reference="bCN-Zj-7sj"/>
+                    <include reference="gXK-xw-zco"/>
+                    <include reference="3y9-2s-o3Z"/>
+                    <include reference="EJS-j2-Fd6"/>
+                    <include reference="eYJ-4p-rxf"/>
+                    <include reference="0wk-A6-bI1"/>
+                    <include reference="6Ja-gZ-upP"/>
+                    <include reference="ZE0-iQ-24d"/>
+                    <include reference="uCC-Ov-XgO"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="838" y="336"/>
+        </view>
+    </objects>
+</document>

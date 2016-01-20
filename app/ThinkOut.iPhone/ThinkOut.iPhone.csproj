@@ -80,12 +80,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="Xamarin.Insights">
-      <HintPath>..\packages\Xamarin.Insights.1.10.6\lib\Xamarin.iOS10\Xamarin.Insights.dll</HintPath>
-    </Reference>
-    <Reference Include="PLCrashReporterUnifiedBinding">
-      <HintPath>..\packages\Xamarin.Insights.1.10.6\lib\Xamarin.iOS10\PLCrashReporterUnifiedBinding.dll</HintPath>
-    </Reference>
     <Reference Include="Calabash">
       <HintPath>..\packages\Xamarin.TestCloud.Agent.0.14.1\lib\Xamarin.iOS10\Calabash.dll</HintPath>
     </Reference>
@@ -125,6 +119,12 @@
     <Reference Include="Microsoft.WindowsAzure.Mobile.Ext">
       <HintPath>..\packages\Microsoft.Azure.Mobile.Client.2.0.1\lib\Xamarin.iOS10\Microsoft.WindowsAzure.Mobile.Ext.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Insights">
+      <HintPath>..\packages\Xamarin.Insights.1.11.3\lib\Xamarin.iOS10\Xamarin.Insights.dll</HintPath>
+    </Reference>
+    <Reference Include="PLCrashReporterUnifiedBinding">
+      <HintPath>..\packages\Xamarin.Insights.1.11.3\lib\Xamarin.iOS10\PLCrashReporterUnifiedBinding.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
@@ -132,12 +132,14 @@
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Views\HomeView\HomeView.xib" />
+    <InterfaceDefinition Include="Views\IdeasView\IdeasView.xib" />
+    <InterfaceDefinition Include="Views\IdeasView\Cells\IdeasTableViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
-    <None Include="AppDelegate.cs.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -152,10 +154,23 @@
     <Compile Include="Helpers\UINavigationControllerExtensions.cs" />
     <Compile Include="Helpers\MvvmCross\CustomPresenter.cs" />
     <Compile Include="Helpers\UIColorExtensions.cs" />
+    <Compile Include="Views\HomeView\HomeView.cs" />
+    <Compile Include="Views\HomeView\HomeView.designer.cs">
+      <DependentUpon>HomeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IdeasView\IdeasView.cs" />
+    <Compile Include="Views\IdeasView\IdeasView.designer.cs">
+      <DependentUpon>IdeasView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IdeasView\Cells\IdeasTableViewCell.cs" />
+    <Compile Include="Views\IdeasView\Cells\IdeasTableViewCell.designer.cs">
+      <DependentUpon>IdeasTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IdeasView\IdeasTableViewSource.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <Import Project="..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Import Project="..\packages\Xamarin.Insights.1.11.3\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.11.3\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
   <ItemGroup>
     <ProjectReference Include="..\ThinkOut.ViewModels\ThinkOut.ViewModels.csproj">
       <Project>{14838C34-CD2C-48FE-AFFB-1EA612484EA4}</Project>
@@ -166,5 +181,8 @@
     <Folder Include="Helpers\" />
     <Folder Include="Helpers\MvvmCross\" />
     <Folder Include="Views\" />
+    <Folder Include="Views\HomeView\" />
+    <Folder Include="Views\IdeasView\" />
+    <Folder Include="Views\IdeasView\Cells\" />
   </ItemGroup>
 </Project>
