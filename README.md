@@ -15,7 +15,7 @@ v.0
 - Create a better How to;
 - Create a blog post introducing Azure App Servce and Azure Mobile Apps; http://williamsrz.com.br/2016/01/05/azure-mobile-apps-como-backend-para-aplicativos-moveis-p1/ 
 - Create a blog post introducing Azure Mobile Apps with Xamarin and ThinkOut App.
-- Create a "how to", about how setup and run Azure Mobile Apps backend;
+- Create a "how to", about how setup and run Azure Mobile Apps backend http://williamsrz.com.br/2016/01/07/como-configurar-e-utilizar-easy-tables-no-azure-mobile-app-service/
 - Implement a better UI/UX;
 - Refactoring;
 
