@@ -2,48 +2,60 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="@color/white">
     <RelativeLayout
-        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-        <TextView
-            android:id="@+id/actionMessage_textView"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+        <include
+            android:id="@+id/topToolbar"
+            layout="@layout/topToolbar" />
+        <RelativeLayout
+            android:layout_below="@id/topToolbar"
+            android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="22dp"
-            android:text="Qual é a sua idéia?"
-            android:gravity="center"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="180dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="0dp"
-            local:MvxBind="Text ActionMessage" />
-        <EditText
-            android:id="@+id/idea_editText"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18dp"
-            android:layout_below="@+id/actionMessage_textView"
-            local:MvxBind="Text IdeaText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="0dp" />
-        <Button
-            android:id="@+id/sendIdea_button"
-            android:layout_below="@+id/idea_editText"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            local:MvxBind="Text SaveText; Click SaveCommand; Enable IsAddingNew"
-            android:layout_centerHorizontal="true"
-            android:text="Enviar"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp" />
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/actionMessage_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:text="Qual é a sua idéia?"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="0dp"
+                local:MvxBind="Text ActionMessage" />
+            <EditText
+                android:id="@+id/idea_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@+id/actionMessage_textView"
+                local:MvxBind="Text IdeaText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="0dp" />
+            <Button
+                android:id="@+id/sendIdea_button"
+                android:layout_below="@+id/idea_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                local:MvxBind="Text SaveText; Click SaveCommand; Enable IsAddingNew"
+                android:layout_centerHorizontal="true"
+                android:text="Enviar"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp" />
+        </RelativeLayout>
     </RelativeLayout>
 </ScrollView>

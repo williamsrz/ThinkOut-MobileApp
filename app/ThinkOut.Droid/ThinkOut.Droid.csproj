@@ -123,6 +123,8 @@
     <AndroidResource Include="Resources\values\Colors.xml" />
     <AndroidResource Include="Resources\layout\IdeasView.axml" />
     <AndroidResource Include="Resources\layout\IdeaItem.axml" />
+    <AndroidResource Include="Resources\layout\TopToolbar.axml" />
+    <AndroidResource Include="Resources\menu\ideas.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ThinkOut.ViewModels\ThinkOut.ViewModels.csproj">

@@ -15,6 +15,7 @@ namespace ThinkOut.ViewModels
 		private string _actionMessage = "Qual é a sua ideia?";
 		private string _saveText = "Compartilhar";
 		private IMvxCommand _saveCommand;
+		private IMvxCommand _gotoIdeasCommand;
 
 		private bool _isAddingNew;
 
@@ -49,6 +50,13 @@ namespace ThinkOut.ViewModels
 			}
 		}
 
+		public IMvxCommand GotoIdeasCommand {
+			get {
+				_gotoIdeasCommand = _gotoIdeasCommand ?? new MvxCommand(() => ShowViewModel<IdeasViewModel>());
+				return _gotoIdeasCommand;
+			}
+		}
+
 		public bool IsAddingNew {
 			get { return _isAddingNew; }
 			set {
@@ -74,7 +82,7 @@ namespace ThinkOut.ViewModels
 
 			await _ideaService.AddIdeaAsync(idea);
 
-			ShowViewModel<IdeasViewModel>();
+			GotoIdeasCommand.Execute();
 
 			IsAddingNew = false;
 			IdeaText = string.Empty;

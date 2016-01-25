@@ -14,20 +14,20 @@ using ThinkOut.ViewModels;
 
 namespace ThinkOut.Droid
 {
-    [Activity]            
-    public class IdeasView : BaseView<IdeasViewModel>
-    {
-        public IdeasView()
-            : base(Resource.Layout.IdeasView)
-        {
-        }
+	[Activity]            
+	public class IdeasView : BaseView<IdeasViewModel>
+	{
+		public IdeasView()
+			: base(Resource.Layout.IdeasView)
+		{
+		}
 
-        protected override void OnCreate(Bundle bundle)
-        {
-            base.OnCreate(bundle);
-
-            // Create your application here
-        }
-    }
+		protected override void OnCreate(Bundle bundle)
+		{
+			base.OnCreate(bundle);
+			SetActionBar();
+			// Create your application here
+		}
+	}
 }
 
