@@ -44,7 +44,7 @@ namespace ThinkOut.ViewModels
 
 		public IMvxCommand SaveCommand {
 			get {
-				_saveCommand = _saveCommand ?? new MvxCommand(async () => ExecuteSaveCommand());
+				_saveCommand = _saveCommand ?? new MvxCommand(async () => await ExecuteSaveCommand());
 				return _saveCommand;
 			}
 		}

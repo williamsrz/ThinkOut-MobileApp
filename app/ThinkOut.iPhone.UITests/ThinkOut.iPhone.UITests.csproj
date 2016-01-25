@@ -41,14 +41,14 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\ThinkOut.iPhone\ThinkOut.iPhone.csproj">
       <Project>{B3CC958A-CB3D-43AF-A99B-E0145B0CD1E8}</Project>
       <Name>ThinkOut.iPhone</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
 </Project>
