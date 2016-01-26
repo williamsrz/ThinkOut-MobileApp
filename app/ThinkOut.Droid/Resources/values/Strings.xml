@@ -3,4 +3,5 @@
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">ThinkOut.Droid</string>
 	<string name="ideas">Ideas</string>
+	<string name="share">compartilhe...</string>
 </resources>

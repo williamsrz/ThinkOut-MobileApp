@@ -98,7 +98,6 @@
     <Compile Include="Helpers\MvvmCross\MvxActionBarActivity.cs" />
     <Compile Include="Helpers\MvvmCross\MvxActionBarEventSourceActivity.cs" />
     <Compile Include="Views\IdeasView.cs" />
-    <Compile Include="Adapters\IdeaViewAdapter.cs" />
     <Compile Include="Helpers\MvvmCross\CustomPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +134,13 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ic_star_circle_white.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_star_circle_white.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_star_circle_white.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_share_white.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_share_white.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_share_white.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_share_white.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_share_white.png" />
+    <AndroidResource Include="Resources\drawable\textview_border.xml" />
+    <AndroidResource Include="Resources\drawable\home_field_border.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ThinkOut.ViewModels\ThinkOut.ViewModels.csproj">

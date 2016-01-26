@@ -19,7 +19,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
             <TextView
-                android:id="@+id/actionMessage_textView"
+                android:id="@+id/actionMessageTextView"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textSize="22dp"
@@ -31,46 +31,56 @@
                 android:layout_marginTop="140dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="0dp"
                 local:MvxBind="Text ActionMessage" />
-            <EditText
-                android:id="@+id/idea_editText"
+            <RelativeLayout
+                android:layout_below="@id/actionMessageTextView"
+                android:id="@+id/ideaWrapper"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:layout_below="@+id/actionMessage_textView"
-                local:MvxBind="Text IdeaText"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="0dp" />
-            <Button
-                android:id="@+id/sendIdea_button"
-                android:layout_below="@+id/idea_editText"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                local:MvxBind="Text SaveText; Click SaveCommand; Enable IsAddingNew"
-                android:layout_centerHorizontal="true"
-                android:text="Enviar"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp" />
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_margin="10dp">
+                <EditText
+                    android:id="@+id/ideaEditText"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/actionMessageTextView"
+                    local:MvxBind="Text IdeaText"
+                    android:hint="@string/share"
+                    android:layout_marginRight="10dp"
+                    android:freezesText="true"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:imeOptions="actionDone"
+                    android:layout_alignParentBottom="true"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="6dp" />
+                <ImageView
+                    android:id="@+id/sendIdeaImageView"
+                    android:layout_below="@+id/idea_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share_white"
+                    local:MvxBind="Text SaveText; Click SaveCommand; Enable IsAddingNew"
+                    android:layout_toRightOf="@id/ideaEditText"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
             <TextView
-                android:layout_below="@id/sendIdea_button"
+                android:layout_below="@id/ideaWrapper"
                 android:id="@+id/about_textView"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textSize="14dp"
-                android:text="Sobre"
+                android:text="Sobre o Think Out"
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="140dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="0dp" />
+                android:layout_marginBottom="20dp" />
         </RelativeLayout>
     </RelativeLayout>
 </ScrollView>

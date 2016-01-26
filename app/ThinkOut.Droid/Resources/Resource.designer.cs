@@ -1459,19 +1459,28 @@ namespace ThinkOut.Droid
 			public const int abc_textfield_search_material = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int ic_star_circle_white = 2130837572;
+			public const int home_field_border = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int ic_view_list_white = 2130837573;
+			public const int ic_share_white = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int Icon = 2130837574;
-			
-			// aapt resource value: 0x7f020048
-			public const int notification_template_icon_bg = 2130837576;
+			public const int ic_star_circle_white = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int splash = 2130837575;
+			public const int ic_view_list_white = 2130837575;
+			
+			// aapt resource value: 0x7f020048
+			public const int Icon = 2130837576;
+			
+			// aapt resource value: 0x7f02004b
+			public const int notification_template_icon_bg = 2130837579;
+			
+			// aapt resource value: 0x7f020049
+			public const int splash = 2130837577;
+			
+			// aapt resource value: 0x7f02004a
+			public const int textview_border = 2130837578;
 			
 			static Drawable()
 			{
@@ -1489,14 +1498,14 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0b0009
 			public const int MvxBindingTagUnique = 2131427337;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int about_textView = 2131427413;
-			
 			// aapt resource value: 0x7f0b0057
-			public const int action0 = 2131427415;
+			public const int about_textView = 2131427415;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int action0 = 2131427417;
 			
 			// aapt resource value: 0x7f0b0052
-			public const int actionMessage_textView = 2131427410;
+			public const int actionMessageTextView = 2131427410;
 			
 			// aapt resource value: 0x7f0b0042
 			public const int action_bar = 2131427394;
@@ -1522,8 +1531,8 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0b0043
 			public const int action_context_bar = 2131427395;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int action_divider = 2131427419;
+			// aapt resource value: 0x7f0b005d
+			public const int action_divider = 2131427421;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1555,14 +1564,14 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0b002c
 			public const int buttonPanel = 2131427372;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int cancel_action = 2131427416;
+			// aapt resource value: 0x7f0b005a
+			public const int cancel_action = 2131427418;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int checkbox = 2131427386;
 			
-			// aapt resource value: 0x7f0b005e
-			public const int chronometer = 2131427422;
+			// aapt resource value: 0x7f0b0060
+			public const int chronometer = 2131427424;
 			
 			// aapt resource value: 0x7f0b001d
 			public const int collapseActionView = 2131427357;
@@ -1591,8 +1600,8 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0b001a
 			public const int end = 2131427354;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int end_padder = 2131427427;
+			// aapt resource value: 0x7f0b0065
+			public const int end_padder = 2131427429;
 			
 			// aapt resource value: 0x7f0b0026
 			public const int expand_activities_button = 2131427366;
@@ -1609,14 +1618,20 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0b002a
 			public const int icon = 2131427370;
 			
+			// aapt resource value: 0x7f0b0054
+			public const int ideaEditText = 2131427412;
+			
 			// aapt resource value: 0x7f0b0053
-			public const int idea_editText = 2131427411;
+			public const int ideaWrapper = 2131427411;
 			
 			// aapt resource value: 0x7f0b0056
-			public const int idea_textView = 2131427414;
+			public const int idea_editText = 2131427414;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int ideas_list_action = 2131427429;
+			// aapt resource value: 0x7f0b0058
+			public const int idea_textView = 2131427416;
+			
+			// aapt resource value: 0x7f0b0067
+			public const int ideas_list_action = 2131427431;
 			
 			// aapt resource value: 0x7f0b001e
 			public const int ifRoom = 2131427358;
@@ -1624,14 +1639,14 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0b0027
 			public const int image = 2131427367;
 			
+			// aapt resource value: 0x7f0b0064
+			public const int info = 2131427428;
+			
+			// aapt resource value: 0x7f0b005e
+			public const int line1 = 2131427422;
+			
 			// aapt resource value: 0x7f0b0062
-			public const int info = 2131427426;
-			
-			// aapt resource value: 0x7f0b005c
-			public const int line1 = 2131427420;
-			
-			// aapt resource value: 0x7f0b0060
-			public const int line3 = 2131427424;
+			public const int line3 = 2131427426;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int listMode = 2131427338;
@@ -1639,8 +1654,8 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0b0029
 			public const int list_item = 2131427369;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int media_actions = 2131427418;
+			// aapt resource value: 0x7f0b005c
+			public const int media_actions = 2131427420;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int middle = 2131427355;
@@ -1714,8 +1729,8 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0b0050
 			public const int select_dialog_listview = 2131427408;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int sendIdea_button = 2131427412;
+			// aapt resource value: 0x7f0b0055
+			public const int sendIdeaImageView = 2131427413;
 			
 			// aapt resource value: 0x7f0b003b
 			public const int shortcut = 2131427387;
@@ -1744,8 +1759,8 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0b0018
 			public const int src_over = 2131427352;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int status_bar_latest_event_content = 2131427417;
+			// aapt resource value: 0x7f0b005b
+			public const int status_bar_latest_event_content = 2131427419;
 			
 			// aapt resource value: 0x7f0b004d
 			public const int submit_area = 2131427405;
@@ -1753,17 +1768,17 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0b000c
 			public const int tabMode = 2131427340;
 			
-			// aapt resource value: 0x7f0b0061
-			public const int text = 2131427425;
+			// aapt resource value: 0x7f0b0063
+			public const int text = 2131427427;
 			
-			// aapt resource value: 0x7f0b005f
-			public const int text2 = 2131427423;
+			// aapt resource value: 0x7f0b0061
+			public const int text2 = 2131427425;
 			
 			// aapt resource value: 0x7f0b0035
 			public const int textSpacerNoButtons = 2131427381;
 			
-			// aapt resource value: 0x7f0b005d
-			public const int time = 2131427421;
+			// aapt resource value: 0x7f0b005f
+			public const int time = 2131427423;
 			
 			// aapt resource value: 0x7f0b002b
 			public const int title = 2131427371;
@@ -1771,8 +1786,8 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0b0030
 			public const int title_template = 2131427376;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int toolbar = 2131427428;
+			// aapt resource value: 0x7f0b0066
+			public const int toolbar = 2131427430;
 			
 			// aapt resource value: 0x7f0b002f
 			public const int topPanel = 2131427375;
@@ -2053,6 +2068,9 @@ namespace ThinkOut.Droid
 			
 			// aapt resource value: 0x7f050016
 			public const int ideas = 2131034134;
+			
+			// aapt resource value: 0x7f050017
+			public const int share = 2131034135;
 			
 			// aapt resource value: 0x7f050013
 			public const int status_bar_notification_info_overflow = 2131034131;
