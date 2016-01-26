@@ -28,6 +28,16 @@ namespace ThinkOut.Droid
 			SetActionBar();
 			// Create your application here
 		}
+
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			if (item.ItemId == Android.Resource.Id.Home) {
+				Finish();
+				return true;
+			}
+
+			return base.OnOptionsItemSelected(item);
+		}
 	}
 }
 

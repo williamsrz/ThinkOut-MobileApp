@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using ThinkOut.Models;
 using ThinkOut.Services;
 using Cirrious.CrossCore;
+using System.Windows.Input;
 
 namespace ThinkOut.ViewModels
 {
@@ -14,8 +15,8 @@ namespace ThinkOut.ViewModels
 		private string _idea;
 		private string _actionMessage = "Qual é a sua ideia?";
 		private string _saveText = "Compartilhar";
-		private IMvxCommand _saveCommand;
-		private IMvxCommand _gotoIdeasCommand;
+		private ICommand _saveCommand;
+		private ICommand _gotoIdeasCommand;
 
 		private bool _isAddingNew;
 
@@ -43,14 +44,14 @@ namespace ThinkOut.ViewModels
 			}
 		}
 
-		public IMvxCommand SaveCommand {
+		public ICommand SaveCommand {
 			get {
 				_saveCommand = _saveCommand ?? new MvxCommand(async () => await ExecuteSaveCommand());
 				return _saveCommand;
 			}
 		}
 
-		public IMvxCommand GotoIdeasCommand {
+		public ICommand GotoIdeasCommand {
 			get {
 				_gotoIdeasCommand = _gotoIdeasCommand ?? new MvxCommand(() => ShowViewModel<IdeasViewModel>());
 				return _gotoIdeasCommand;
@@ -82,7 +83,7 @@ namespace ThinkOut.ViewModels
 
 			await _ideaService.AddIdeaAsync(idea);
 
-			GotoIdeasCommand.Execute();
+			GotoIdeasCommand.Execute(null);
 
 			IsAddingNew = false;
 			IdeaText = string.Empty;

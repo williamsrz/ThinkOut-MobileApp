@@ -763,29 +763,29 @@ namespace ThinkOut.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0a003d
-			public const int abc_background_cache_hint_selector_material_dark = 2131361853;
+			// aapt resource value: 0x7f0a0045
+			public const int abc_background_cache_hint_selector_material_dark = 2131361861;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int abc_background_cache_hint_selector_material_light = 2131361854;
+			// aapt resource value: 0x7f0a0046
+			public const int abc_background_cache_hint_selector_material_light = 2131361862;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int abc_input_method_navigation_guard = 2131361792;
 			
-			// aapt resource value: 0x7f0a003f
-			public const int abc_primary_text_disable_only_material_dark = 2131361855;
+			// aapt resource value: 0x7f0a0047
+			public const int abc_primary_text_disable_only_material_dark = 2131361863;
 			
-			// aapt resource value: 0x7f0a0040
-			public const int abc_primary_text_disable_only_material_light = 2131361856;
+			// aapt resource value: 0x7f0a0048
+			public const int abc_primary_text_disable_only_material_light = 2131361864;
 			
-			// aapt resource value: 0x7f0a0041
-			public const int abc_primary_text_material_dark = 2131361857;
+			// aapt resource value: 0x7f0a0049
+			public const int abc_primary_text_material_dark = 2131361865;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int abc_primary_text_material_light = 2131361858;
+			// aapt resource value: 0x7f0a004a
+			public const int abc_primary_text_material_light = 2131361866;
 			
-			// aapt resource value: 0x7f0a0043
-			public const int abc_search_url_text = 2131361859;
+			// aapt resource value: 0x7f0a004b
+			public const int abc_search_url_text = 2131361867;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int abc_search_url_text_normal = 2131361793;
@@ -796,11 +796,14 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0a0003
 			public const int abc_search_url_text_selected = 2131361795;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int abc_secondary_text_material_dark = 2131361860;
+			// aapt resource value: 0x7f0a004c
+			public const int abc_secondary_text_material_dark = 2131361868;
 			
-			// aapt resource value: 0x7f0a0045
-			public const int abc_secondary_text_material_light = 2131361861;
+			// aapt resource value: 0x7f0a004d
+			public const int abc_secondary_text_material_light = 2131361869;
+			
+			// aapt resource value: 0x7f0a0040
+			public const int accent = 2131361856;
 			
 			// aapt resource value: 0x7f0a0004
 			public const int accent_material_dark = 2131361796;
@@ -859,6 +862,9 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0a0015
 			public const int dim_foreground_material_light = 2131361813;
 			
+			// aapt resource value: 0x7f0a0044
+			public const int divider = 2131361860;
+			
 			// aapt resource value: 0x7f0a0016
 			public const int foreground_material_dark = 2131361814;
 			
@@ -876,6 +882,9 @@ namespace ThinkOut.Droid
 			
 			// aapt resource value: 0x7f0a001b
 			public const int hint_foreground_material_light = 2131361819;
+			
+			// aapt resource value: 0x7f0a0043
+			public const int icons = 2131361859;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int material_blue_grey_800 = 2131361820;
@@ -913,17 +922,29 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0a0027
 			public const int material_grey_900 = 2131361831;
 			
+			// aapt resource value: 0x7f0a003d
+			public const int primary = 2131361853;
+			
+			// aapt resource value: 0x7f0a003e
+			public const int primary_dark = 2131361854;
+			
 			// aapt resource value: 0x7f0a0028
 			public const int primary_dark_material_dark = 2131361832;
 			
 			// aapt resource value: 0x7f0a0029
 			public const int primary_dark_material_light = 2131361833;
 			
+			// aapt resource value: 0x7f0a003f
+			public const int primary_light = 2131361855;
+			
 			// aapt resource value: 0x7f0a002a
 			public const int primary_material_dark = 2131361834;
 			
 			// aapt resource value: 0x7f0a002b
 			public const int primary_material_light = 2131361835;
+			
+			// aapt resource value: 0x7f0a0041
+			public const int primary_text = 2131361857;
 			
 			// aapt resource value: 0x7f0a002c
 			public const int primary_text_default_material_dark = 2131361836;
@@ -943,6 +964,9 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0a0031
 			public const int ripple_material_light = 2131361841;
 			
+			// aapt resource value: 0x7f0a0042
+			public const int secondary_text = 2131361858;
+			
 			// aapt resource value: 0x7f0a0032
 			public const int secondary_text_default_material_dark = 2131361842;
 			
@@ -961,11 +985,11 @@ namespace ThinkOut.Droid
 			// aapt resource value: 0x7f0a0037
 			public const int switch_thumb_disabled_material_light = 2131361847;
 			
-			// aapt resource value: 0x7f0a0046
-			public const int switch_thumb_material_dark = 2131361862;
+			// aapt resource value: 0x7f0a004e
+			public const int switch_thumb_material_dark = 2131361870;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int switch_thumb_material_light = 2131361863;
+			// aapt resource value: 0x7f0a004f
+			public const int switch_thumb_material_light = 2131361871;
 			
 			// aapt resource value: 0x7f0a0038
 			public const int switch_thumb_normal_material_dark = 2131361848;
@@ -1435,13 +1459,19 @@ namespace ThinkOut.Droid
 			public const int abc_textfield_search_material = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int Icon = 2130837572;
-			
-			// aapt resource value: 0x7f020046
-			public const int notification_template_icon_bg = 2130837574;
+			public const int ic_star_circle_white = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int splash = 2130837573;
+			public const int ic_view_list_white = 2130837573;
+			
+			// aapt resource value: 0x7f020046
+			public const int Icon = 2130837574;
+			
+			// aapt resource value: 0x7f020048
+			public const int notification_template_icon_bg = 2130837576;
+			
+			// aapt resource value: 0x7f020047
+			public const int splash = 2130837575;
 			
 			static Drawable()
 			{

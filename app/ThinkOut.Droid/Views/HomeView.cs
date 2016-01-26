@@ -30,7 +30,7 @@ namespace ThinkOut.Droid.Views
 		public override bool OnOptionsItemSelected(IMenuItem item)
 		{
 			if (item.ItemId == Resource.Id.ideas_list_action) {
-				ViewModel.GotoIdeasCommand.Execute();
+				ViewModel.GotoIdeasCommand.Execute(null);
 			}
 
 			return base.OnOptionsItemSelected(item);

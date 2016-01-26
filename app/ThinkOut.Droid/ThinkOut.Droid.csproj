@@ -118,13 +118,23 @@
     <AndroidResource Include="Resources\values\MvxBindingAttributes.xml" />
     <AndroidResource Include="Resources\values\SplashStyle.xml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
-    <AndroidResource Include="Resources\layout\HomeView.axml" />
     <AndroidResource Include="Resources\values\Styles.xml" />
     <AndroidResource Include="Resources\values\Colors.xml" />
     <AndroidResource Include="Resources\layout\IdeasView.axml" />
     <AndroidResource Include="Resources\layout\IdeaItem.axml" />
     <AndroidResource Include="Resources\layout\TopToolbar.axml" />
     <AndroidResource Include="Resources\menu\ideas.xml" />
+    <AndroidResource Include="Resources\layout\HomeView.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_view_list_white.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_view_list_white.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_view_list_white.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_view_list_white.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_view_list_white.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_star_circle_white.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_star_circle_white.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_star_circle_white.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_star_circle_white.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_star_circle_white.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ThinkOut.ViewModels\ThinkOut.ViewModels.csproj">
