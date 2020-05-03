@@ -17,7 +17,7 @@ v.0
 - [ ] Build a simple API
 - [ ] Hook the API with the Services; 
 - [ ] Refactoring;
-- Implement a better UI/UX;
+- [ ] Implement a better UI/UX;
 
 v.1
 - [ ] Setup Authentication;
