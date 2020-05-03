@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<d:MvxContentPage
+    xmlns:d="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms" 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    x:TypeArguments="viewModels:HomeViewModel"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ThinkOut.Shared.Pages"
+    xmlns:viewModels="clr-namespace:ThinkOut.Shared.ViewModels"
+    x:Class="ThinkOut.Shared.Pages.HomePage">
+    <ContentPage.Content>
+        <Label Text="{Binding ActionMessage}" ></Label>
+    </ContentPage.Content>
+</d:MvxContentPage>
