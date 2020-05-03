@@ -2,32 +2,26 @@
 
 ### About / Sobre
 
-**ThinkOut** is an demo app for you share useful ideas with others, its build using **Azure Mobile Apps** and **MvvmCross**, and provide as start point for you learn and start building awesome apps with **Xamarin** and **Azure**
+**ThinkOut** is an demo app for you share useful ideas with others, its build using **MvvmCross**, and provide as start point for you learn and start building awesome apps with **Xamarin Forms**
 
 ---
 
-**ThinkOut** é uma app demo, para que você compartilhe ideias com outras pessoas, é construindo utilizando **Azure Mobile Apps** e **MvvmCross** e pode ser útil como ponto de partida para que você comece a construir aplicativos incríveis com **Xamain** e **Azure** 
+**ThinkOut** é uma app demo, para que você compartilhe ideias com outras pessoas, é construindo utilizando **MvvmCross** e pode ser útil como ponto de partida para que você comece a construir aplicativos incríveis com **Xamarin Forms**
 
 ### Roadmap
 
 v.0
-- Create Unit Tests;
-- Create a better How to;
-- Create a blog post introducing Azure App Servce and Azure Mobile Apps; http://williamsrz.com.br/2016/01/05/azure-mobile-apps-como-backend-para-aplicativos-moveis-p1/ 
-- Create a blog post introducing Azure Mobile Apps with Xamarin and ThinkOut App.
-- Create a "how to", about how setup and run Azure Mobile Apps backend http://williamsrz.com.br/2016/01/07/como-configurar-e-utilizar-easy-tables-no-azure-mobile-app-service/
+- [x] Convert to a Xamarin.Forms Project;
+- [ ] Fix navigation and commands;
+- [ ] Mock API calls;
+- [ ] Build a simple API
+- [ ] Hook the API with the Services; 
+- [ ] Refactoring;
 - Implement a better UI/UX;
-- Refactoring;
 
 v.1
-- Setup Authentication;
-- Setup "share an idea" button;
-
-v.2
-- Setup off-line sync;
-
-v.3
-- Setup push notification;
+- [ ] Setup Authentication;
+- [ ] Setup "share an idea" button;
 
 
 ### How to use / Como utilizar
